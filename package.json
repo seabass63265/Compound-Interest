@@ -1,0 +1,15 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "A simple compound intrest calculator",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Sebastian Rocha",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}

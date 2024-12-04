@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <script src="compintrest.js" defer></script>
+
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Header -->
+      <header class="header">
+        <h1>Compound Interest Calculator</h1>
+      </header>
+
+      <main class="main-content">
+        <div style="text-align: center">
+          <img
+            src="https://images.static.jeniusbank.com/81bfavdafg0o/7oKNPN3RqmSBPHQpeiPULv/1a4c1252852d9bbd62bc103f33068848/compound-interest-blog-jeniusbank-20230825-1280x721.webp"
+            alt="compoundpic1"
+            width="320"
+            height="240"
+          />
+        </div>
+
+        <div class="input-group">
+          <p><label for="principal">Principal</label></p>
+          <input type="number" id="principal" />
+
+          <p><label for="rate">Interest Rate (%)</label></p>
+          <input type="number" id="rate" />
+
+          <p>
+            <label for="compoundingTimes"
+              >Number of times interest is compounded per year</label
+            >
+          </p>
+          <input type="number" id="compoundingTimes" />
+
+          <p><label for="time">Time (years)</label></p>
+          <input type="number" id="time" />
+
+          <!-- No button needed for calculation -->
+          <h2>Result: $<output id="result">0</output></h2>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2024 Compound Interest Calculator</p>
+        <p>Designed by Sebastian Rocha</p>
+        <p>
+          View the source code on
+          <a
+            href="https://codesandbox.io/p/sandbox/compound-interest-hw1-rdqxxh?layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522cm0pt45lc0006356idajd6f3i%2522%252C%2522sizes%2522%253A%255B100%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522cm0pt45lc0002356imk1hpwpo%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522cm0pt45lc0003356il62sbzdg%2522%257D%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522cm0pt45lc0005356ir5onc3th%2522%257D%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522cm0pt45lc0002356imk1hpwpo%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0pt45lb0001356iop634auc%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252Findex.html%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%252C%257B%2522id%2522%253A%2522cm0vb8r0d0002356igh6p0q91%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522initialSelections%2522%253A%255B%257B%2522startLineNumber%2522%253A11%252C%2522startColumn%2522%253A42%252C%2522endLineNumber%2522%253A11%252C%2522endColumn%2522%253A42%257D%255D%252C%2522filepath%2522%253A%2522%252Fstyles.css%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%255D%252C%2522id%2522%253A%2522cm0pt45lc0002356imk1hpwpo%2522%252C%2522activeTabId%2522%253A%2522cm0vb8r0d0002356igh6p0q91%2522%257D%252C%2522cm0pt45lc0005356ir5onc3th%2522%253A%257B%2522id%2522%253A%2522cm0pt45lc0005356ir5onc3th%2522%252C%2522activeTabId%2522%253A%2522cm0valqlb000h356ib9f9drin%2522%252C%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0pt45lc0004356irebppq4c%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%257D%252C%257B%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%252C%2522id%2522%253A%2522cm0pt48xc000l356imd9gwpot%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%252C%257B%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%252C%2522id%2522%253A%2522cm0valqlb000h356ib9f9drin%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%255D%257D%252C%2522cm0pt45lc0003356il62sbzdg%2522%253A%257B%2522tabs%2522%253A%255B%255D%252C%2522id%2522%253A%2522cm0pt45lc0003356il62sbzdg%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Afalse%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D"
+            target="_blank"
+            >CodeSandbox</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
