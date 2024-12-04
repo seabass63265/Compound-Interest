@@ -7,10 +7,10 @@ const resultOutput = document.querySelector("#result");
 
 // Function to calculate compound interest
 function calculate() {
-  const principal = parseFloat(principalInput.value);
-  const rate = parseFloat(rateInput.value) / 100; // Convert rate to a decimal
-  const compoundingTimes = parseFloat(compoundingInput.value);
-  const time = parseFloat(timeInput.value);
+  const principal = Number(principalInput.value);
+  const rate = Number(rateInput.value) / 100; // Convert rate to a decimal
+  const compoundingTimes = Number(compoundingInput.value);
+  const time = Number(timeInput.value);
 
   if (
     isNaN(principal) ||
